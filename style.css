@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+  margin: 0;
+  top: 0 !important;
+  min-height: 100%;
+}
+
+.skiptranslate {
+  display: none;
+  height: 0;
+}
+
+header {
+  height: 100px;
+  background-color: #6c63ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header > a {
+  margin: 0 1%;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-size: 20px;
+  line-height: 23px;
+}
+header > a::after {
+  content: '';
+  display: block;
+
+  margin: 8px auto 0;
+  height: 1px;
+  width: 0%;
+
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+header > a:hover:after {
+  width: 100%;
+}
+.lang_switcher {
+  margin: 0px 0px 8px 45px;
+  color: #000;
+}
+input[type='button'] {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  cursor: pointer;
+
+  background: none;
+  border: none;
+
+  transition: all 0.2s linear;
+}
+.active {
+  color: #fff;
+}
+
+.main {
+  height: 983px;
+  background: url(./img/background.png) no-repeat 95%/95%;
+  position: relative;
+}
+
+.main > * {
+  margin-left: 310px;
+}
+.txt {
+  display: flex;
+  width: 860px;
+  height: 285px;
+  background-color: #6c63ff;
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.txt > p {
+  width: 765px;
+  height: 150px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+.history > h1 {
+  margin: 257px 0px 43px 10px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #6c63ff;
+}
+.history {
+  position: absolute;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 442px;
+  background-color: #6c63ff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+footer > * {
+  margin: 67px 60px 0;
+}
+.contact > h2,
+.navbar > h2 {
+  margin: 15px 0 10px 0;
+}
+.navbar > a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.2s linear;
+}
+.navbar > a:hover {
+  color: #ada9f0;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.navbar::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 306px;
+  left: 50%;
+  top: 1165px;
+
+  background: #ffffff;
+  border-radius: 2px;
+}
