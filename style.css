@@ -157,26 +157,32 @@ footer > * {
   background: #ffffff;
   border-radius: 2px;
 }
+
 img {
   position: absolute;
 }
+
 #left_tree {
   right: 0;
   bottom: 0;
 }
+
 #tree {
   bottom: 72px;
   right: 123px;
 }
+
 #man {
   z-index: 1;
   bottom: 0;
   right: 83px;
 }
+
 #right_tree {
   left: 0;
   bottom: 0;
 }
+
 #circle {
   bottom: 212px;
   left: 122px;
